@@ -9,9 +9,9 @@ import java.util.Optional;
 public interface ICustomer {
     List<Customer> getCustomers();
 
-    Optional<Customer> getCustomerByIf(int id);
+    Optional<Customer> getCustomerByIf(Long id);
 
-    void deleteCustomer(int id);
+    void deleteCustomer(Long id);
 
-    void addCustomer(int id);
+    void addCustomer(Customer customer);
 }
